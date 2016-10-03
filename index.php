@@ -6,9 +6,7 @@
 </head>
 <body>
 <p>
-    <?php
-    echo "Hello World njvbsjr";
-    ?>
+hello
 </p>
 </body>
 </html>
