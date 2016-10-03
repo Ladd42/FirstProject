@@ -8,7 +8,8 @@
 <p>
     <?php
     echo "Hello World njvbsjr";
-    echo "Hello, world!";  echo "Hello," . " " . "world" . "!";
+    echo "Hello, world!";
+    echo "Hello," . " " . "world" . "!";
     ?>
 
 </p>
