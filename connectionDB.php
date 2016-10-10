@@ -7,6 +7,6 @@ $db = new mysqli(
 'webappalexander'
 );
 
-if($db- >connect_errno){
+if($db->connect_errno){
     die('Connection failed['.$db->connect_error.']');
 }
