@@ -11,15 +11,5 @@ if($db->connect_errno){
     die('Connection failed['.$db->connect_error.']');
 }
 
-$sql_query="SELECT * FROM superheros WHERE superpower LIKE '%user%'";
-
-$result = $db->query($sq1_query);
-
-while($row = $result->fetch_array()){
-    echo"<p>" . $row['Superman'] . "</p>";
-}
-
-$result->close();
-$db->close();
 
 ?>
