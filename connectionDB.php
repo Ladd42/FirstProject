@@ -10,3 +10,14 @@ $db = new mysqli(
 if($db->connect_errno){
     die('Connection failed['.$db->connect_error.']');
 }
+
+$sql_query="SELECT * FROM superheros WHERE superpower LIKE '%aser%'";
+
+$result = $db->query($sq1_query);
+
+while($row = $result->fetch_array()){
+    echo"<p>" . $row['Superman'] . "</p>";
+}
+
+$result->dose();
+$db->dose();
