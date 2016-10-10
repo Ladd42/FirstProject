@@ -13,7 +13,7 @@ if($db->connect_errno){
 
 $sql_query="SELECT * FROM marvelmovies WHERE title LIKE '%Captain America%'";
 
-$result = $db->query($sq1_query);
+$result = $db->query($sql_query);
 
 while($row = $result->fetch_array()){
     echo"<p>" . $row['title'] . "</p>";
