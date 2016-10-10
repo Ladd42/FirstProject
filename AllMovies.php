@@ -16,7 +16,7 @@ $sql_query="SELECT * FROM marvelmovies WHERE title LIKE '%%'";
 $result = $db->query($sql_query);
 
 while($row = $result->fetch_array()){
-    echo"table";
+    echo"<table>";
     echo"<p>" . $row['title'] . "</p>";
 }
 
