@@ -11,7 +11,7 @@ if($db->connect_errno){
     die('Connection failed['.$db->connect_error.']');
 }
 
-$sql_query="SELECT * FROM marvelmovies WHERE title LIKE '%Marvel%'";
+$sql_query="SELECT * FROM marvelmovies WHERE productionStudio LIKE '%Marvel%'";
 
 $result = $db->query($sql_query);
 
