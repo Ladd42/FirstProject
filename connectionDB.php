@@ -19,5 +19,5 @@ while($row = $result->fetch_array()){
     echo"<p>" . $row['Superman'] . "</p>";
 }
 
-$result->dose();
-$db->dose();
+$result->close();
+$db->close();
