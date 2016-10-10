@@ -1,10 +1,10 @@
 </php
 //connection to csdm - webdev server and select DB
 $db = new mysqli(
-'host',
-'user',
-'password',
-'db_name'
+'us-cdbr-azure-southcentral-f.cloudapp.net',
+'b5051f6adfc120',
+'c31439e7',
+'webappalexander'
 );
 
 if($db- >connect_error.']');
