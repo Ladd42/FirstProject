@@ -11,11 +11,11 @@ if($db->connect_errno){
     die('Connection failed['.$db->connect_error.']');
 }
 
-$sql_query="SELECT * FROM marvelmovies WHERE title LIKE '%Marvel%'";
+$sql_query="SELECT * FROM marvelmovies WHERE yearReleased > 2010";
 
 $result = $db->query($sql_query);
 
-echo "<h1> All Movies </h1>";
+echo "<h1> All Movies after 2010</h1>";
 
 while($row = $result->fetch_array()){
     echo"<table>";
