@@ -1,4 +1,4 @@
-</php
+<?php
 //connection to csdm - webdev server and select DB
 $db = new mysqli(
 'us-cdbr-azure-southcentral-f.cloudapp.net',
@@ -7,5 +7,6 @@ $db = new mysqli(
 'webappalexander'
 );
 
-if($db- >connect_error.']');
+if($db- >connect_errno){
+    die('Connection failed['.$db->connect_error.']');
 }
