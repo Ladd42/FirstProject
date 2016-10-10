@@ -11,7 +11,7 @@ if($db->connect_errno){
     die('Connection failed['.$db->connect_error.']');
 }
 
-$sql_query="SELECT * FROM superheros WHERE superpower LIKE '%aser%'";
+$sql_query="SELECT * FROM superheros WHERE superpower LIKE '%user%'";
 
 $result = $db->query($sq1_query);
 
