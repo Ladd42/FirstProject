@@ -15,6 +15,9 @@
     $gender = $_POST["gender"];
     $mainsuperheropower = $_POST["mainsuperpower"];
 
+    $sql = "INSERT INTO superheroes (forename, surname, gender, mainsuperpower) VALUES ('$forename' , '$surname', '$gender', '$mainsuperheropower')"
+
+
     ?>
     <form action="formResponse.php" method="post">
         <label>Forename</Label><input type="text" name="forename">
