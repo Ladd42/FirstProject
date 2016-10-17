@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Where would you like to say hi?</title>
+    <title>Planets</title>
 </head>
 <body>
 <p>
-<form action="helloPrinter.php" method ="post">
-<input type="text" placeholder="Planet Name" name="planetname">
-<input type="sumbit" value='Go!'>
-</form>
+    <?php
+
+    <a href="http://webappalexander.azurewebsites.net/week3/helloPrinter.php?planetname=earth"><button>Earth<button></a><br>
+    <a href="http://webappalexander.azurewebsites.net/week3/helloPrinter.php?planetname=mars"><button>Mars<button></a><br>
+    <a href="http://webappalexander.azurewebsites.net/week3/helloPrinter.php?planetname=uranus"><button>Uranus<button></a><br>
+?>
+
 </p>
 </body>
 </html>
