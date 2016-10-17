@@ -6,7 +6,16 @@
 </head>
 <body>
 <p>
+    <?php
+    //include the db
+    include ("Superheros_DB.php");
 
+    $forename = $_POST["forename"];
+    $surname = $_POST["surname"];
+    $gender = $_POST["gender"];
+    $mainsuperheropower = $_POST["mainsuperpower"];
+
+    ?>
     <form action="formResponse.php" method="post">
         <label>Forename</Label><input type="text" name="forename">
         <label>Surname</Label><input type="text" name="surname">
