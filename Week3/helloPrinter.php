@@ -7,7 +7,7 @@
 <body>
 <p>
 <?php
-$planetname = $_POST["planetname"];
+$planetname = $_GET["planetname"];
 echo "welcome to {$planetname}"
 
 ?>
