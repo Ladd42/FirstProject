@@ -11,7 +11,7 @@
 $surname = $_POST['surname'];
 $gender = $_POST['gender'];
 $mainsuperheropower = $_POST['mainsuperheropower'];
-echo "thanks {$forename}  {$surname} you are a {$gender} and your main super power is {$mainsuperheropower}";
+echo "Thanks {$forename}  {$surname} you are a {$gender} and your main super power is {$mainsuperheropower}";
 
 ?>
 </p>
