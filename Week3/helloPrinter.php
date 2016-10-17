@@ -7,8 +7,10 @@
 <body>
 <p>
 <?php
-<echo> "test" ;
+$planetname = $_POST["planetname"];
+echo "welcome to {$planetname}"
 
+?>
 </p>
 </body>
 </html>
