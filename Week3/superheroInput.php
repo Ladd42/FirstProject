@@ -6,7 +6,7 @@
 </head>
 <body>
 <p>
-    <?php
+
     <form action="formResponse.php" method="post">
         <label>Forename</Label><input type="text" name="forename">
         <label>Surname</Label><input type="text" name="surname">
@@ -14,7 +14,6 @@
         <label>MainPower</Label><input type="text" name="mainsuperheropower">
         <input type="submit" value="Submit">
         </form>
-    ?>
 
 </p>
 </body>
