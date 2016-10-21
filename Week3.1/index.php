@@ -10,12 +10,12 @@
     <h2>Homepage</h2>
 </header>
 <p>What would you like to do?</p>
-<ui>
+<ul>
     <li> <a href="insertSuperheros.php" Insert a superhero</a></li>
     <li> <a href="displaySuperheros.php" Display all superheros</a></li>
     <li> <a href="battle.php"Insert a battle  </a></li>
     <li> <a href="displayBattles.php" Display all battles</a></li>
-</ui>
+<ul>
 <?
 include ("db_connect.php");
 $sql_query = "SELECT * FROM superheros";
@@ -30,6 +30,8 @@ while ($row = $result -> fetch_array())
 
 }
 ?>
+</ul>
+</ul>
 
 </body>
 </html>
