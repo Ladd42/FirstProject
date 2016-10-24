@@ -1,18 +1,14 @@
 <?php
 
 
-$username = $_POST["Name"];
-$password = $_POST["Password"];
+$username = $_POST["name"];
+$password = $_POST["password"];
 
-if ($username =="Alexander" && $password=="ladd")
+if ($username =="username" && $password=="password")
 {
-    echo $username;
-    echo $password;
     setcookie('access_level_cookie', 'standarduser');
-
-
 }
 
-header('Location: loggedin.php');
+header('Location: loggedIn.php');
 
 ?>
