@@ -13,6 +13,6 @@ if ($username =="Alexander" && $password=="ladd")
 
 }
 
-header('Location: week4/loggedin.php');
+header('Location: loggedin.php');
 
 ?>
