@@ -18,8 +18,8 @@ function displayAccessLevelInformation($accessLevel)
 
     }
     elseif ($accessLevel == "root") {
-     echo "<p<p style = \"background-color: red\">You are currently logged in as a root User</p>";
-     echo "<p<p style = \"background-color: red\">You have access to additional admin features</p>";
+        echo "<p<p style = \"background-color: red\">You are currently logged in as a root user</p>";
+        echo "<p<p style = \"background-color: red\">You have Admin rights</p>";
 
     }
 
