@@ -4,7 +4,7 @@
 $username = $_POST["name"];
 $password = $_POST["password"];
 
-if ($username =="Alexander" && $password=="ladd")
+if ($username ="Alexander" && $password="ladd")
 {
     echo $username;
     echo $password;
