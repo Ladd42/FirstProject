@@ -6,13 +6,16 @@
  * Time: 14:10
  */
 session_start();
-$accesslevel = $_COOKIE['access_level_cookie'];
+
 
 displayAccessLevelInformation($accessLevel);
 
+$accessLevel = $_COOKIE['access_level_cookie'];
+
 function displayAccessLevelInformation($accessLevel)
 {
-    if ($accessLevel == "sUser") {
+    if ($accessLevel == "sUser")
+    {
         echo "<p style = \"background-color: lightgreen\">You are currently logged in as a Standard User</p>";
 
     }
