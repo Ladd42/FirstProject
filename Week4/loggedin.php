@@ -6,7 +6,7 @@
  * Time: 14:10
  */
 session_start();
-$accesslevel = $_COOKIE['access_level_cookie'];
+$accessLevel = $_COOKIE['access_level_cookie'];
 
 displayAccessLevelInformation($accessLevel);
 
@@ -18,8 +18,8 @@ function displayAccessLevelInformation($accessLevel)
 
     }
     elseif ($accessLevel == "root") {
-        echo "<p<p style = \"background-color: red\">You are currently logged in as a root user</p>";
-        echo "<p<p style = \"background-color: red\">You have Admin rights</p>";
+        echo "<p<p style = \"background-color: green\">You are currently logged in as a root user</p>";
+        echo "<p<p style = \"background-color: green\">You have Admin rights</p>";
 
     }
 
