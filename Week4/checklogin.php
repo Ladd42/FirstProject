@@ -1,8 +1,8 @@
 <?php
 
 
-$username = $_POST["name"];
-$password = $_POST["password"];
+$username = $_POST["Name"];
+$password = $_POST["Password"];
 
 if ($username =="Alexander" && $password=="ladd")
 {
