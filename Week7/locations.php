@@ -39,5 +39,3 @@ while ($row = $result->fetch_array()){
     echo $dom->saveXML();
 
     ?>
-
-}
