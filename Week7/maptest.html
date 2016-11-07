@@ -9,23 +9,9 @@
             var map = new google.maps.Map(document.getElementById("map"), {
                 center: new google.maps.LatLng(47.6145, -122.3418),
                 zoom: 13,
-                mapTypeId: 'roadmap',
+                mapTypeId: 'roadmap'
+            });
         }
-        function downloadUrl(url,callback) {
-            var request = window.ActiveXObject ?
-                    new ActiveXObject('Microsoft.XMLHTTP') :
-                    new XMLHttpRequest;
-
-            request.onreadystatechange = function() {
-                if (request.readyState == 4) {
-                    callback(request, request.status);
-                }
-            };
-
-            request.open('GET', http://webappalexander.azurewebsites.net/week7/locations.php, true);
-            request.send(null);
-        }
-
     </script>
 
 </head>
@@ -33,3 +19,8 @@
 <div id="map" style="width: 500px; height: 300px"></div>
 </body>
 </html>
+
+
+
+
+
