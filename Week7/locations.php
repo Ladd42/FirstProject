@@ -21,16 +21,16 @@ if (!$result)   {
 header("content-type: text/xml");
 
 
-while ($row = $result->fetch_array()){
+while ($row = $result->fetch_array()) {
 
-    $node = $dom-> createElement("marker");
+    $node = $dom->createElement("marker");
     $newnode = $parnode->appendChild($node);
-    $newnode->setAttribute("name",$row['name']);
+    $newnode->setAttribute("name", $row['name']);
     $newnode->setAttribute("address", $row['address']);
     $newnode->setAttribute("lat", $row['lat']);
     $newnode->setAttribute("lng", $row['lng']);
     $newnode->setAttribute("type", $row['type']);
-
+}
 
     $result->close();
     $db->close();
