@@ -1,6 +1,6 @@
-<head>
+<!--<head>
     <link rel="stylesheet" type="text/css" href="http://webappalexander.azurewebsites.net/maps/layout.css">
-</head>
+</head> -->
 <div id="map"></div>
 <div id="right-panel">
     <p>Total Distance: <span id="total"></span></p>
