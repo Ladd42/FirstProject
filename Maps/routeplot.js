@@ -1,6 +1,6 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
+        zoom: 4,
         center: new google.maps.LatLng(57.061681, -2.129468), //Portlethen
     });
 
@@ -23,9 +23,8 @@ function displayRoute(origin, destination, service, display) {
     service.route({
         origin: origin,
         destination: destination,
-        waypoints: [{location: 'Torry, Aberdeen, Scotland'}, {location: 'Cove Bay, Scotland'}],
+        waypoints: [{location: 'Torry, Aberdeen, Scotland'}],
         travelMode: 'WALKING',
-        avoidTolls: true
     }, function(response, status) {
         if (status === 'OK') {
             display.setDirections(response);
