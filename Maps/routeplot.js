@@ -1,6 +1,6 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
+        zoom: 14,
         center: new google.maps.LatLng(57.061681, -2.129468), //Portlethen
     });
 
@@ -15,7 +15,7 @@ function initMap() {
         computeTotalDistance(directionsDisplay.getDirections());
     });
 
-    displayRoute('Aberdeen, Scotland', 'Portlethen, Scotland', directionsService,
+    displayRoute('Perth, WA', 'Sydney, NSW', directionsService,
         directionsDisplay);
 }
 
@@ -23,8 +23,9 @@ function displayRoute(origin, destination, service, display) {
     service.route({
         origin: origin,
         destination: destination,
-        waypoints: [{location: 'Torry, Aberdeen, Scotland'}],
-        travelMode: 'WALKING',
+        waypoints: [{location: 'Adelaide, SA'}, {location: 'Broken Hill, NSW'}],
+        travelMode: 'DRIVING',
+        avoidTolls: true
     }, function(response, status) {
         if (status === 'OK') {
             display.setDirections(response);
