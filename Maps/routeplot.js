@@ -15,7 +15,7 @@ function initMap() {
         computeTotalDistance(directionsDisplay.getDirections());
     });
 
-    displayRoute('Perth, WA', 'Sydney, NSW', directionsService,
+    displayRoute('Aberdeen, Scotland', 'Edinburgh, Scotland', directionsService,
         directionsDisplay);
 }
 
@@ -23,7 +23,7 @@ function displayRoute(origin, destination, service, display) {
     service.route({
         origin: origin,
         destination: destination,
-        waypoints: [{location: 'Adelaide, SA'}, {location: 'Broken Hill, NSW'}],
+        waypoints: [{location: 'Dundee, Scotland'}, {location: 'Perth, Scotland'}],
         travelMode: 'DRIVING',
         avoidTolls: true
     }, function(response, status) {
