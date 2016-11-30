@@ -6,7 +6,7 @@ function initMap() {
 
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer({
-        draggable: true,
+        draggable: false,
         map: map,
         panel: document.getElementById('right-panel')
     });
