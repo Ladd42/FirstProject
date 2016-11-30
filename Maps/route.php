@@ -1,6 +1,7 @@
-<!--<head>
+<head>
     <link rel="stylesheet" type="text/css" href="http://webappalexander.azurewebsites.net/maps/layout.css">
-</head> -->
+    <script type="text/javascript" src="http://webappalexander.azurewebsites.net/maps/routeplot.js"></script>
+</head>
 <div id="map"></div>
 <div id="right-panel">
     <p>Total Distance: <span id="total"></span></p>
@@ -10,7 +11,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAsaPQGyO2SHJumHMC2k8RTYfy3z7OXIk&callback=initMap">
 
 </script>
-<script type="text/javascript" src="http://webappalexander.azurewebsites.net/maps/routeplot.js"></script>
+
 
 <body>
 
