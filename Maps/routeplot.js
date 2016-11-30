@@ -15,7 +15,7 @@ function initMap() {
         computeTotalDistance(directionsDisplay.getDirections());
     });
 
-    displayRoute('Aberdeen, Scotland', 'Edinburgh, Scotland', directionsService,
+    displayRoute('Aberdeen, Scotland', 'Portlethen, Scotland', directionsService,
         directionsDisplay);
 }
 
@@ -23,8 +23,8 @@ function displayRoute(origin, destination, service, display) {
     service.route({
         origin: origin,
         destination: destination,
-        waypoints: [{location: 'Dundee, Scotland'}, {location: 'Perth, Scotland'}],
-        travelMode: 'DRIVING',
+        waypoints: [{location: 'Torry, Scotland'}, {location: 'Cove Bay, Scotland'}],
+        travelMode: 'WALKING',
         avoidTolls: true
     }, function(response, status) {
         if (status === 'OK') {
