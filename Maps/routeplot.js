@@ -15,7 +15,7 @@ function initMap() {
         computeTotalDistance(directionsDisplay.getDirections());
     });
 
-    displayRoute('Perth, WA', 'Sydney, NSW', directionsService,
+    displayRoute('Aberdeen, Scotland', 'Portlethen, Scotland', directionsService,
         directionsDisplay);
 }
 
@@ -23,8 +23,8 @@ function displayRoute(origin, destination, service, display) {
     service.route({
         origin: origin,
         destination: destination,
-        waypoints: [{location: 'Adelaide, SA'}, {location: 'Broken Hill, NSW'}],
-        travelMode: 'DRIVING',
+        waypoints: [{location: 'Torry, Aberdeen, Scotland'}, {location: 'Cove Bay, Scotland'}],
+        travelMode: 'WALKING',
         avoidTolls: true
     }, function(response, status) {
         if (status === 'OK') {
