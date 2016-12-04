@@ -16,7 +16,7 @@ function initMap() {
     });
 
     displayRoute('Aberdeen, Scotland', 'Portlethen, Scotland', directionsService,
-        );
+        directionsDisplay);
 }
 
 function displayRoute(origin, destination, service, display) {
