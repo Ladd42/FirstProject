@@ -1,20 +1,17 @@
 <?php
-if(isset($_POST['submit'])){
-    $to = "xander19@btinternet.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$from = 'From: xander19@btinternet.com';
+$to = 'alexander.ladd@btinternet.com';
+$subject = 'Customer Inquiry';
+$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    // You cannot use header and echo together. It's one or the other.
+if ($_POST['submit']) {
+    if (mail ($to, $subject, $body, $from)) {
+        echo '<p>Your message has been sent!</p>';
+    } else {
+        echo '<p>Something went wrong, go back and try again!</p>';
+    }
 }
 ?>
